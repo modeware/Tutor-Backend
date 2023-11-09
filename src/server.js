@@ -1,7 +1,6 @@
 import express from 'express';
-import dotenv from 'dotenv';
-
-dotenv.config();
+import './loadenv.js'
+import pg from './db/connection.js';
 
 const app = express();
 
